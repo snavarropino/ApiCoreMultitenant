@@ -19,8 +19,6 @@ Each detabase has just ine table (Superheros) containing one row for Sergius sup
 
 Then you can send request to API that will insert a couple of rows in the Superheros 
 
-         curl -X GET \
-	        -H "CompanyId: 2" \
-	        'http://localhost:5000/api/test/index'
+         curl -X GET -H 'CompanyId: 2' 'http://localhost:5000/api/test/index'
 
 As you can see we are sending a request for CompanyId=2 so rows are inserted in the database for this tenant (EfCoreMultitenant-2-FirstStep)
