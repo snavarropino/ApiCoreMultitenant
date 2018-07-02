@@ -15,7 +15,7 @@ Once the Api is started, a couple of databases are automatically created on Sql 
 - EfCoreMultitenant-1-FirstStep
 - EfCoreMultitenant-2-FirstStep
 
-Each detabase has just ine table (Superheros) containing one row for Sergius superhero
+Each database has just one table (Superheros) containing one row for Sergius superhero
 
 Then you can send request to API that will insert a couple of rows in the Superheros 
 
