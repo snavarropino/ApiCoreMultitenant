@@ -44,6 +44,7 @@ namespace _01_FirstStep
         [HttpGet("query")]
         public async Task<ActionResult<List<Superhero>>> Query(string sql)
         {
+            var connString = "DefaultEndpointsProtocol=https;AccountName=terraformlocalstate;AccountKey=VpSvQXpaaoqQ29qBUdqLXW1zLJUbh5bXZ/RB+lHDyHS+Yck1Z9K2y6t47M4yDUnFBuyjnUFdau3Oc6xqGX/u/Q==;EndpointSuffix=core.windows.net";
             var heroes = await _context.Superheros.FromSql(sql).ToListAsync();
 
             return heroes;
