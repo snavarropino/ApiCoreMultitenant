@@ -18,7 +18,7 @@ namespace _01_FirstStep
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvcCore().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
             services.AddTransient<SuperheroContext>((ctx) =>
             {
